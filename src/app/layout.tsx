@@ -13,8 +13,8 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Bester Papa der Welt",
-  description: "Ein kleines Geschenk für den besten Papa der Welt.",
+  title: "Bester Papa auf der Welt",
+  description: "Wer ist der beste Papa auf der Welt?",
 };
 
 export default function RootLayout({

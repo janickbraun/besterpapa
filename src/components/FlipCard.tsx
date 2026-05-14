@@ -20,9 +20,9 @@ export default function FlipCard() {
         {/* Front */}
         <div className="absolute inset-0 [backface-visibility:hidden] bg-warm-white rounded-3xl scrapbook-shadow border-[12px] border-warm-white p-4">
           <div className="w-full h-full border-2 border-dashed border-accent-blue/20 rounded-xl flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            <h2 className="font-handwriting text-4xl sm:text-6xl text-accent-blue leading-tight text-center">
+            <h1 className="font-handwriting text-4xl sm:text-6xl text-accent-blue leading-tight text-center">
               Wer ist der<br/>beste<br/>Papa der Welt?
-            </h2>
+            </h1>
             <div className="absolute bottom-4 left-0 right-0 flex flex-col items-center">
               <p className="font-sans text-[10px] text-accent-orange uppercase tracking-[0.2em] font-semibold">
                 Tippe hier
