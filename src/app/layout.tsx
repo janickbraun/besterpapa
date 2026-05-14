@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${outfit.variable} ${caveat.variable} scroll-smooth`}>
       <body className="antialiased min-h-screen flex flex-col font-sans bg-warm-bg text-text-main selection:bg-accent-orange selection:text-white">
+        <div className="noise-overlay" aria-hidden="true" />
         {children}
       </body>
     </html>

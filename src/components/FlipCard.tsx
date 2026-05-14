@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 export default function FlipCard() {
   const [isFlipped, setIsFlipped] = useState(false);
+  const imageUrl = "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800&auto=format&fit=crop";
 
   return (
     <div className="relative w-full max-w-[320px] aspect-[4/5] sm:max-w-[400px] [perspective:1000px]">
@@ -19,14 +20,9 @@ export default function FlipCard() {
         <div className="absolute inset-0 [backface-visibility:hidden] bg-warm-white rounded-3xl scrapbook-shadow flex flex-col items-center justify-center p-8 text-center border-[12px] border-warm-white">
           <div className="w-full h-full border-2 border-dashed border-accent-blue/20 rounded-xl flex flex-col items-center justify-center p-6">
             <h2 className="font-handwriting text-5xl sm:text-6xl text-accent-blue leading-tight mb-8">
-              Wer ist der<br/>beste Papa<br/>der Welt?
+              Wer ist der<br/>beste<br/>Papa der Welt?
             </h2>
             <div className="mt-auto flex flex-col items-center gap-2">
-              <motion.div 
-                animate={{ y: [0, 5, 0] }} 
-                transition={{ repeat: Infinity, duration: 2 }}
-                className="w-6 h-6 border-b-2 border-r-2 border-accent-orange rotate-45 opacity-50"
-              />
               <p className="font-sans text-xs text-accent-orange uppercase tracking-[0.2em] font-semibold">
                 Tippe hier
               </p>
@@ -41,15 +37,10 @@ export default function FlipCard() {
         >
           <div className="relative w-full h-full overflow-hidden rounded-2xl">
             <img
-              src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800&auto=format&fit=crop"
+              src={imageUrl}
               alt="Bester Papa"
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-accent-blue/80 to-transparent flex items-end justify-center pb-8">
-              <span className="font-handwriting text-5xl text-warm-white drop-shadow-md">
-                Du bist es! ❤️
-              </span>
-            </div>
           </div>
         </div>
       </motion.div>
