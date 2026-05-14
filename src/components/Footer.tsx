@@ -14,6 +14,9 @@ export default function Footer() {
           <Link href="/datenschutz" className="font-sans text-sm text-text-main/60 hover:text-accent-orange transition-colors">
             Datenschutz
           </Link>
+          <a href="https://portfolio.janickbraun.com" target="_blank" rel="noopener noreferrer" className="font-sans text-sm text-text-main/60 hover:text-accent-orange transition-colors">
+            made by Janick
+          </a>
         </div>
       </div>
     </footer>
