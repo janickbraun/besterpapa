@@ -1,5 +1,6 @@
 import FlipCard from "@/components/FlipCard";
 import AlbumSection from "@/components/AlbumSection";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,7 +18,11 @@ export default function Home() {
       {/* Content Section */}
       <AlbumSection />
 
+      {/* CTA Section */}
+      <CTASection />
+
       <Footer />
     </main>
   );
 }
+
